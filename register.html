@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Responsive Registration Form</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0" />
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/registerstyles.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <video id="videoBG" poster="poster.JPG" autoplay muted loop>
+        <source src="/ariaro2images/register-background.mp4" type="video/mp4">
+    </video>
+
+    <!-- from here -->
+    <center>
+        <div class="container">
+            <a href="/ariaro2.html">
+                <h2 class="back-btn"><u><i class="fa-solid fa-arrow-left" style="color: #a61924;"></i>Back</u></h2>
+            </a>
+            <h1><i class="fa-solid fa-pen-to-square" style="color: #a61924;"></i> <u>REGISTER</u></h1>
+            <div class="content">
+                <form action="#" class="needs-validation" novalidate>
+                    <div class="user-details">
+                        <!-- <div class="input-box">
+                            <span class="details">
+                                <h3>Full Name: </h3>
+                            </span>
+                            <input type="text" placeholder="Enter your Name" required class="input-class">
+                        </div> -->
+
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="nameInput" placeholder="Your Name" required>
+                            <label for="nameInput">Full Name</label>
+                            <div class="valid-feedback">
+                                Nice name!
+                            </div>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="EmailInput" placeholder="name@example.com"
+                                required>
+                            <label for="floatingInput">Email address</label>
+                        </div>
+
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text" id="addon-wrapping">+91</span>
+                            <input type="number" class="form-control" placeholder="PhoneNumber" aria-label="Username"
+                                aria-describedby="addon-wrapping" required>
+                        </div>
+
+
+                    </div>
+
+                    <div class="gender-details">
+
+                        <span class="gender-title">
+                            <h3>Gender: </h3>
+                        </span> <br>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1" required>
+                            <label class="form-check-label" for="inlineRadio1">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2" required>
+                            <label class="form-check-label" for="inlineRadio2">Female</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                                value="option2" required>
+                            <label class="form-check-label" for="inlineRadio2">Prefer not to say</label>
+                        </div>
+
+                    </div>
+
+                    <br>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label"><h5>College/University Name:</h5></label>
+                        <input type="text" class="form-control" id="ClgName" placeholder="Enter here" required>
+                    </div>
+                    <br>
+
+                    <div class="select-events">
+                        <label for="events-list">
+                            <h3>Select Events:</h3>
+                        </label><br>
+
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkbox1">
+                            <label class="form-check-label" for="checkbox1">
+                                Pick Switch
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkbox2">
+                            <label class="form-check-label" for="checkbox2">
+                                Robo Race
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkbox3">
+                            <label class="form-check-label" for="checkbox3">
+                                Robo Fight
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkbox4">
+                            <label class="form-check-label" for="checkbox4">
+                                Tech Treasure
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkbox5">
+                            <label class="form-check-label" for="checkbox5">
+                                Debate on Cyberlaw & Dark Web
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkbox6">
+                            <label class="form-check-label" for="checkbox6">
+                                Code-A-Thon
+                            </label>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Agree to <a href="#" id="openPopup">terms and conditions</a>
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                    </div>
+
+                    <div class="popup" id="popup">
+                        <div class="popup-content">
+                            <button class="close-button" id="closePopup">&times;</button>
+                            <h2>Popup Title</h2>
+                            <p>Popup content goes here.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac mi nec est finibus
+                                pellentesque. Donec vestibulum nulla non sem consequat commodo. Duis tempus, metus quis
+                                dignissim sollicitudin, est dui hendrerit nulla, vitae tincidunt nibh elit a neque.</p>
+                            <!-- Add more content as needed -->
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus saepe veritatis magni
+                                deserunt alias temporibus sit quis excepturi expedita dolorem dolores, quaerat totam eum
+                                ullam nemo obcaecati ut facere tenetur et quisquam dignissimos. Dicta quae, inventore
+                                dolor sunt dignissimos assumenda ratione deleniti autem, commodi earum voluptate
+                                praesentium! Ab, consectetur explicabo, reprehenderit delectus error libero in ex fugit
+                                laboriosam ipsa nesciunt autem facere nulla quam dicta sed nobis labore, earum
+                                voluptatum quo quia deleniti saepe. Itaque neque repellendus blanditiis officiis
+                                voluptatibus sed, ullam fuga unde quod laborum odit, saepe doloribus aliquid molestiae.
+                                Delectus illum, reiciendis a porro voluptate doloremque hic id! Corporis saepe nesciunt
+                                ducimus optio at quasi sequi non deleniti nam nostrum velit dolorem ullam consectetur
+                                deserunt explicabo, a cumque numquam beatae sunt delectus? Laborum, deleniti aut? Eaque
+                                tempore similique nisi quaerat deleniti? Numquam laboriosam suscipit quos modi iste,
+                                dolor a ipsum veritatis, ea facilis dignissimos ex in obcaecati molestias. Iusto
+                                corrupti suscipit esse in, harum itaque similique possimus necessitatibus ratione autem
+                                error ipsam maxime excepturi laborum explicabo assumenda consequatur eligendi. Ab
+                                corporis aspernatur quod quidem numquam natus! Voluptatum, rem doloremque! Aut, possimus
+                                nobis exercitationem hic omnis labore, eveniet, id voluptas saepe mollitia nulla sequi
+                                perferendis consequuntur veritatis nam voluptate a provident recusandae! Quos officiis
+                                inventore quisquam doloribus! Earum repudiandae autem, tempore sint maiores minima
+                                accusamus, unde nam veritatis itaque nemo fuga consequuntur qui dignissimos totam
+                                quisquam saepe nesciunt veniam at expedita recusandae, obcaecati sed illum. A labore
+                                accusantium mollitia nisi exercitationem sunt eius similique ab dolor odit nobis
+                                distinctio natus, quia maxime eos officiis quis atque esse, doloremque laborum quos.
+                                Corrupti nulla quae cumque eveniet quaerat tempora minus eius incidunt, ea, nesciunt
+                                inventore! Accusantium et sint, ullam numquam explicabo eveniet mollitia, tempora
+                                consectetur, qui corporis maiores modi iusto aliquid assumenda! Reprehenderit provident
+                                culpa maxime impedit soluta dolore cupiditate, voluptas quod voluptate ipsa assumenda
+                                beatae ab minima explicabo odio commodi suscipit officia, aperiam ratione praesentium?
+                                Molestias necessitatibus, blanditiis vitae hic temporibus expedita nam sapiente facere
+                                ratione nesciunt nihil? Rerum rem velit, laudantium iusto explicabo quae. Quidem
+                                reiciendis fugit et nostrum necessitatibus nisi debitis, consequuntur ullam nulla animi
+                                vero dolorum! Quis sint commodi doloremque officiis corrupti sapiente repudiandae
+                                corporis eveniet temporibus, non tempora asperiores, suscipit ad quaerat fugit quae.
+                                Ducimus facilis tempore aspernatur nulla? Dolorem officia fugit modi veniam reiciendis
+                                impedit iusto nostrum, soluta illo minima ducimus accusamus quia vel fuga sint similique
+                                incidunt illum, assumenda distinctio dicta placeat aliquam dignissimos harum nemo? Minus
+                                inventore provident vel consequatur sed sequi omnis earum eligendi. Odit excepturi
+                                exercitationem corrupti dolores unde officia in at eveniet laboriosam quidem, repellat
+                                alias iure nemo ratione incidunt inventore! Cumque veritatis facere placeat recusandae
+                                porro labore rerum atque omnis ipsum exercitationem aliquam repudiandae modi optio
+                                iusto, natus dicta, quasi unde facilis deleniti vero hic cum. Accusantium aliquam,
+                                pariatur aliquid dolores atque facilis consequuntur perspiciatis quis possimus
+                                distinctio ullam eos dolorum. Voluptatem iusto laborum nobis voluptate exercitationem!
+                                Vel, nulla harum totam, molestias voluptatem sapiente sed at maiores dolores natus
+                                similique aut ipsam officiis dicta impedit necessitatibus expedita eveniet iste?</p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12">
+                        <button class="btn btn-primary submit-btn" type="submit">Submit form</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </center>
+
+    <script src="/js/register.js"></script>
+</body>
+
+</html>
